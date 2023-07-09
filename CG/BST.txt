@@ -1,0 +1,17 @@
+Binary Search Tree
+-most used
+- search a number in o(log n) time
+- all nodes of left sub tree are less than the root node
+- all nodes of right sub tree are more than the root node
+
+insertion: leaf node
+delection:
+case1: leaf node
+    just delete the leaf node
+case2: one child
+    copy child and delete the leaf
+case3: 2 child
+    1. get inorder successor of that node (right oda last left)
+    2. replace the node with the inorder successor
+    3. remove the inorder successor from its original position.
+
